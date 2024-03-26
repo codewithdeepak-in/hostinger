@@ -118,25 +118,7 @@
         </section>
         <section class="content-panel">
             <div class="container mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, enim delectus. Deleniti beatae fuga
-                asperiores veritatis omnis similique a nemo facilis. Eaque facilis expedita vitae nam perspiciatis,
-                ullam temporibus voluptatem animi laudantium, eligendi tenetur asperiores distinctio nihil aliquam!
-                Praesentium, accusantium corporis. Iste magnam cumque iure aut perspiciatis hic odio. Delectus assumenda
-                alias, quibusdam aperiam amet magni omnis similique distinctio tempora ipsam quasi provident at aliquam
-                et placeat laborum totam tenetur, aut reiciendis sint necessitatibus. Distinctio fuga iure vitae nisi.
-                Aspernatur numquam autem corporis non illum voluptatibus asperiores necessitatibus? Cum quae maxime,
-                culpa eius sequi ullam qui, obcaecati veniam dicta architecto, sint reprehenderit dolorum ad placeat
-                exercitationem molestias fugit laborum animi omnis ex consectetur dignissimos? Asperiores, voluptate
-                perspiciatis est numquam sequi porro non earum commodi ex dolores consequuntur, laboriosam deleniti,
-                eius quasi. Atque cumque sapiente officiis illo itaque? Aliquam a aut iusto beatae illo facere sunt
-                minus aperiam doloribus alias provident numquam necessitatibus atque nisi minima impedit eligendi
-                temporibus non quia consectetur, mollitia eos maxime quis. Mollitia tenetur placeat, beatae a doloribus
-                quod? Atque sunt cumquees officiis distinctio veritatis quo, dignissimos tempore consequuntur ipsa fuga
-                odit ducimus facere quia, eius minima, obcaecati magni voluptatem. at, ipsum perspiciatis fugit nobis
-                soluta amet magni accusamus voluptatibus inventore praesentium id reprehenderit qui alias nostrum neque
-                sapiente ad similique rem. Nisi neque placeat facilis repudiandae omnis sunt adipisci cupiditate, quia
-                suscipit sapiente ex iste dolores nemo! Quis, possimus? Quo, dolor! Accusantium quidem laudantium fugit
-                optio, est quod cupiditate repudiandae, qui, quasi sapiente voluptate. Provident, dolores eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, enim delectus. Deleniti beatae fuga asperiores veritatis omnis similique a nemo facilis. Eaque facilis expedita vitae nam perspiciatis, ullam temporibus voluptatem animi laudantium, eligendi tenetur asperiores distinctio nihil aliquam! Praesentium, accusantium corporis. Iste magnam cumque iure aut perspiciatis hic odio. Delectus assumenda alias, quibusdam aperiam amet magni omnis similique distinctio tempora ipsam quasi provident at aliquam et placeat laborum totam tenetur, aut reiciendis sint necessitatibus. Distinctio fuga iure vitae nisi. Aspernatur numquam autem corporis non illum voluptatibus asperiores necessitatibus? Cum quae maxime, culpa eius sequi ullam qui, obcaecati veniam dicta architecto, sint reprehenderit dolorum ad placeat exercitationem molestias fugit laborum animi omnis ex consectetur dignissimos? Asperiores, voluptate perspiciatis est numquam sequi porro non earum commodi ex dolores consequuntur, laboriosam deleniti, eius quasi. Atque cumque sapiente officiis illo itaque? Aliquam a aut iusto beatae illo facere sunt minus aperiam doloribus alias provident numquam necessitatibus atque nisi minima impedit eligendi temporibus non quia consectetur, mollitia eos maxime quis. Mollitia tenetur placeat, beatae a doloribus quod? Atque sunt cumquees officiis distinctio veritatis quo, dignissimos tempore consequuntur ipsa fuga odit ducimus facere quia, eius minima, obcaecati magni voluptatem. at, ipsum perspiciatis fugit nobis soluta amet magni accusamus voluptatibus inventore praesentium id reprehenderit qui alias nostrum neque sapiente ad similique rem. Nisi neque placeat facilis repudiandae omnis sunt adipisci cupiditate, quia suscipit sapiente ex iste dolores nemo! Quis, possimus? Quo, dolor! Accusantium quidem laudantium fugit optio, est quod cupiditate repudiandae, qui, quasi sapiente voluptate. Provident, dolores eligendi?
             </div>
         </section>
         <button class="close-navigation-panel" onclick="togglePanel()">
@@ -144,15 +126,17 @@
         </button>
     </main>
     <script>
-        function togglePanel() {
+        function togglePanel(){
             var x = document.querySelector(".navigation-panel");
             var y = document.querySelector('.content-panel')
             if (x.style.display === "none") {
                 x.style.display = "block";
-                x.classList.add('panel-show');
+                x.style.width = "100%";
+                y.style.display = "none";
             } else {
-                x.classList.remove('panel-show');
                 x.style.display = "none";
+                y.style.display = "block";
+                y.style.width = "100%"
             }
         }
     </script>
