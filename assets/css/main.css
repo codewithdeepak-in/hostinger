@@ -10,3 +10,10 @@
     box-shadow: 2px 2px 5px #e8e8e8;
     height: 70px;
 }
+
+.bg-common{
+    background-color: #fbfbfb !important;
+    box-shadow: 2px 2px 5px #e8e8e8;
+    height: 400px;
+    width: 100%;
+}
