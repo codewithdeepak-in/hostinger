@@ -1,0 +1,12 @@
+.navbar-toggler{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-color: transparent !important;
+}
+
+.navbar{
+    background-color: #fbfbfb!important;
+    box-shadow: 2px 2px 5px #e8e8e8;
+    height: 70px;
+}
