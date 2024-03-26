@@ -149,15 +149,10 @@
             var y = document.querySelector('.content-panel')
             if (x.style.display === "none") {
                 x.style.display = "block";
-                x.style.width = "100%";
-                x.style.transition = "transform 0.3s ease-in-out"; 
-                y.style.display = "none";
+                x.classList.add('panel-show');
             } else {
+                x.classList.remove('panel-show');
                 x.style.display = "none";
-                y.style.display = "block";
-                y.style.width = "100%";
-                x.style.transition = "transform 0.3s ease-in-out"; 
-                y.style.transform = "translateX(0%)"; // Slide in from the left
             }
         }
     </script>
