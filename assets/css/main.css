@@ -83,3 +83,30 @@
         width: 65%;
     }
 }
+
+
+.close-navigation-panel{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .close-navigation-panel{
+        display: block;
+        position: absolute;
+        top: 50%;
+        border: none;
+        background-color: #0D6EFD;
+        color: white;
+        font-size: 1.2rem;
+        padding: 5px;
+        border-radius: 0px 20% 20% 0px;
+        z-index: 10;
+    }
+    .navigation-panel{
+        display: none;
+    }
+    .content-panel{
+        width: 100%;
+        text-align: justify;
+    }
+}
