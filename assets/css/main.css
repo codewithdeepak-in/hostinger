@@ -11,9 +11,75 @@
     height: 70px;
 }
 
-.bg-common{
-    background-color: #fbfbfb !important;
+.navigation-panel{
+    width: 20%;
+    background-color: #fbfbfb;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style:initial;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #757676 #f5f5f5;
     box-shadow: 2px 2px 5px #e8e8e8;
-    height: 400px;
+}
+
+.navigation-panel ul{
+    list-style: none;
+    padding: 0;
+    margin: 4px;
+}
+
+.navigation-panel ul li button{
     width: 100%;
+    border: 1px solid rgb(235, 235, 235);
+    text-align: left;
+    height: 40px;
+    padding-left: 20px;
+    margin: 1px;
+    border-radius: 3px;
+}
+
+.navigation-panel ul li button:hover{
+    background-color: #0D6EFD;
+    color: white;
+}
+.content-panel{
+    width: 80%;
+    background-color: #fbfbfb;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style:initial;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #757676 #f5f5f5;
+    box-shadow: 2px 2px 5px #e8e8e8;
+}
+
+@media screen and (max-width: 1000px){
+    .navigation-panel{
+        width: 25%;
+    }
+    .content-panel{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .navigation-panel{
+        width: 30%;
+    }
+    .content-panel{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navigation-panel{
+        width: 35%;
+    }
+    .content-panel{
+        width: 65%;
+    }
 }
